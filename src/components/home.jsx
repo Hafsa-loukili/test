@@ -37,11 +37,7 @@ const Home = () => {
         <div className="row row-cols-1 row-cols-md-4 g-4">
           <div className="col">
             <div className="card h-100">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/image1.jpeg`}
-                className="card-img-top"
-                alt="Sac 1"
-              />
+              <img src='./images/image1.jpeg'/>
               <div className="card-body text-center">
                 <h5 className="card-title">Sac 1</h5>
                 <p className="card-text">Prix: 150 MAD</p>
