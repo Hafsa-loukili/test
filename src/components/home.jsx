@@ -1,4 +1,4 @@
-// src/components/Home.jsx
+
 import React from 'react';
 import styled from 'styled-components';
 
@@ -22,7 +22,7 @@ const Footer = styled.footer`
   padding: 1rem;
   font-size: 1rem;
   position: relative;
-   margin-top: 3rem;
+  margin-top: 3rem;
   bottom: 0;
 `;
 
@@ -37,53 +37,87 @@ const Home = () => {
         <div className="row row-cols-1 row-cols-md-4 g-4">
           <div className="col">
             <div className="card h-100">
-              <img src="/images/image1.jpeg" className="card-img-top" alt="Sac 1" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/image1.jpeg`}
+                className="card-img-top"
+                alt="Sac 1"
+              />
               <div className="card-body text-center">
                 <h5 className="card-title">Sac 1</h5>
                 <p className="card-text">Prix: 150 MAD</p>
-                <button className="btn" style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}>Ajouter au panier</button>
+                <button
+                  className="btn"
+                  style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}
+                >
+                  Ajouter au panier
+                </button>
               </div>
             </div>
           </div>
 
           <div className="col">
             <div className="card h-100">
-              <img src="/images/image2.jpeg" className="card-img-top" alt="Sac 2" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/image2.jpeg`}
+                className="card-img-top"
+                alt="Sac 2"
+              />
               <div className="card-body text-center">
                 <h5 className="card-title">Sac 2</h5>
                 <p className="card-text">Prix: 150 MAD</p>
-                <button className="btn" style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}>Ajouter au panier</button>
+                <button
+                  className="btn"
+                  style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}
+                >
+                  Ajouter au panier
+                </button>
               </div>
             </div>
           </div>
 
           <div className="col">
             <div className="card h-100">
-              <img src="/images/image3.jpeg" className="card-img-top" alt="Sac 3" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/image3.jpeg`}
+                className="card-img-top"
+                alt="Sac 3"
+              />
               <div className="card-body text-center">
                 <h5 className="card-title">Sac 3</h5>
                 <p className="card-text">Prix: 150 MAD</p>
-                <button className="btn" style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}>Ajouter au panier</button>
+                <button
+                  className="btn"
+                  style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}
+                >
+                  Ajouter au panier
+                </button>
               </div>
             </div>
           </div>
 
           <div className="col">
             <div className="card h-100">
-              <img src="/images/image4.jpeg" className="card-img-top" alt="Sac 4" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/image4.jpeg`}
+                className="card-img-top"
+                alt="Sac 4"
+              />
               <div className="card-body text-center">
                 <h5 className="card-title">Sac 4</h5>
                 <p className="card-text">Prix: 150 MAD</p>
-                <button className="btn" style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}>Ajouter au panier</button>
+                <button
+                  className="btn"
+                  style={{ backgroundColor: '#9caf88', color: '#f5f5dc' }}
+                >
+                  Ajouter au panier
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <Footer>
-        &copy; 2024 Votre Boutique. Tous droits réservés.
-      </Footer>
+      <Footer>&copy; 2024 Votre Boutique. Tous droits réservés.</Footer>
     </>
   );
 };
